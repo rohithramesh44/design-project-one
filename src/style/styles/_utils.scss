@@ -1,0 +1,42 @@
+@import "./mixins";
+@import "./varibales";
+
+button {
+  padding: 1rem 2.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: transparent;
+
+  &.btn-outline {
+    border: 1px solid $prim-cl;
+  }
+  &.btn {
+    background-color: $prim-cl;
+    color: $white-cl;
+  }
+
+  @include breakpoint(md) {
+    padding: 1.6rem 3rem;
+  }
+}
+h1 {
+  font-size: 3.4rem;
+  @include breakpoint(md) {
+    font-size: 4.8rem;
+  }
+}
+p {
+  font-size: 1.2rem;
+
+  color: $blackLi-cl;
+  @include breakpoint(md) {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+  }
+  @include breakpoint(lg) {
+    font-size: 1.6rem;
+  }
+}
+.bg-text-primary {
+  color: $prim-cl;
+}

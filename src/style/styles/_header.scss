@@ -1,0 +1,87 @@
+@import "./varibales";
+@import "./mixins";
+header {
+  height: 7.6rem;
+  background-color: $offwhite-cl;
+  @include breakpoint(md) {
+    height: 11.2rem;
+  }
+}
+.navbar {
+  .navbar-nav {
+    list-style: none;
+    .nav-item {
+      padding: 1.4rem 3rem;
+      a {
+        color: $black-cl;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+// menubar icon style
+.menu-icon {
+  width: 4rem;
+  height: 2.8rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  margin-left: 3rem;
+
+  span,
+  span::after,
+  span::before {
+    display: block;
+    background-color: $black-cl;
+    width: 100%;
+    height: 4px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+  }
+  span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+  }
+  span::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+  }
+}
+.menu-icon.open span {
+  background-color: transparent;
+}
+.menu-icon.open span::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-icon.open span::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+//end
+
+.banner {
+  background-color: $offwhite-cl;
+  @include breakpoint(lg) {
+    height: 80vh;
+  }
+}
+.brand-logo {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: $black-cl;
+}
+.banner-img {
+  height: 40%;
+  @include breakpoint(lg) {
+    height: 70%;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

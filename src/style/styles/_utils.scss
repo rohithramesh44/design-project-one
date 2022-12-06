@@ -32,9 +32,12 @@ h2 {
     font-size: 3rem;
   }
 }
+h5 {
+  font-size: 1.8rem;
+}
 p {
   font-size: 1.4rem;
-  line-height: 2rem;
+  line-height: 2.6rem;
   color: $blackLi-cl;
   @include breakpoint(md) {
     font-size: 1.4rem;

@@ -1,4 +1,5 @@
 @import "./mixins";
+@import "./varibales";
 
 .gallery-big {
   flex: 0 0 60%;
@@ -31,6 +32,40 @@
         width: 100%;
         border-radius: 1rem;
         object-fit: cover;
+      }
+    }
+  }
+}
+
+//glide testimonial
+.testimonial {
+  border-radius: 1rem;
+}
+
+.glide-testimonial {
+  width: 100%;
+  height: 100%;
+
+  .review-box {
+    background-color: $prim-cl;
+    border-radius: 1rem;
+    color: $white-cl;
+    i {
+      font-size: 7.8rem;
+    }
+    p {
+      width: 80%;
+      color: $white-cl;
+    }
+    .review-user {
+      color: $white-cl;
+      img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 10rem;
+      }
+      span {
+        font-size: 1.4rem;
       }
     }
   }

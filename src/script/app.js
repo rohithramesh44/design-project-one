@@ -10,3 +10,11 @@ menuBtn.addEventListener("click", () => {
   }
   console.log("pressed");
 });
+
+//testimonial
+
+new Glide(".glide-testimonial", {
+  type: "carousel",
+  startAt: 0,
+  autoplay: 2000,
+}).mount();

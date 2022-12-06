@@ -5,6 +5,7 @@ button {
   padding: 1rem 2.4rem;
   border: none;
   border-radius: 0.5rem;
+  cursor: pointer;
   background-color: transparent;
 
   &.btn-outline {
@@ -25,9 +26,12 @@ h1 {
     font-size: 4.8rem;
   }
 }
+h2 {
+  font-size: 2.2rem;
+}
 p {
-  font-size: 1.2rem;
-
+  font-size: 1.4rem;
+  line-height: 2rem;
   color: $blackLi-cl;
   @include breakpoint(md) {
     font-size: 1.4rem;
@@ -39,4 +43,12 @@ p {
 }
 .bg-text-primary {
   color: $prim-cl;
+}
+
+//sizing -----
+.vh-30 {
+  height: 30vh !important;
+}
+.vh-40 {
+  height: 40vh !important;
 }

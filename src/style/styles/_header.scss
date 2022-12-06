@@ -52,13 +52,14 @@ header {
   }
 }
 .menu-icon.open span {
+  transform: translateX(-50%);
   background-color: transparent;
 }
 .menu-icon.open span::before {
-  transform: rotate(45deg) translate(35px, -35px);
+  transform: rotate(45deg) translate(15px, -15px);
 }
 .menu-icon.open span::after {
-  transform: rotate(-45deg) translate(35px, 35px);
+  transform: rotate(-45deg) translate(15px, 15px);
 }
 
 //end
@@ -70,9 +71,12 @@ header {
   }
 }
 .brand-logo {
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-weight: 500;
   color: $black-cl;
+  @include breakpoint(md) {
+    font-size: 2.8rem;
+  }
 }
 .banner-img {
   height: 40%;

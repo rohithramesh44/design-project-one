@@ -2,7 +2,6 @@ header {
   height: 7.6rem;
   background-color: #eff5f5;
 }
-
 @media screen and (min-width: 768px) {
   header {
     height: 11.2rem;
@@ -12,11 +11,9 @@ header {
 .navbar .navbar-nav {
   list-style: none;
 }
-
 .navbar .navbar-nav .nav-item {
   padding: 1.4rem 3rem;
 }
-
 .navbar .navbar-nav .nav-item a {
   color: #181818;
   font-size: 1.6rem;
@@ -26,17 +23,12 @@ header {
   width: 4rem;
   height: 2.8rem;
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   position: relative;
   margin-left: 3rem;
 }
-
 .menu-icon span,
 .menu-icon span::after,
 .menu-icon span::before {
@@ -45,16 +37,13 @@ header {
   width: 100%;
   height: 4px;
   border-radius: 100px;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-
 .menu-icon span::after {
   content: "";
   position: absolute;
   top: 0;
 }
-
 .menu-icon span::before {
   content: "";
   position: absolute;
@@ -62,23 +51,21 @@ header {
 }
 
 .menu-icon.open span {
+  transform: translateX(-50%);
   background-color: transparent;
 }
 
 .menu-icon.open span::before {
-  -webkit-transform: rotate(45deg) translate(35px, -35px);
-          transform: rotate(45deg) translate(35px, -35px);
+  transform: rotate(45deg) translate(15px, -15px);
 }
 
 .menu-icon.open span::after {
-  -webkit-transform: rotate(-45deg) translate(35px, 35px);
-          transform: rotate(-45deg) translate(35px, 35px);
+  transform: rotate(-45deg) translate(15px, 15px);
 }
 
 .banner {
   background-color: #eff5f5;
 }
-
 @media screen and (min-width: 992px) {
   .banner {
     height: 80vh;
@@ -86,21 +73,24 @@ header {
 }
 
 .brand-logo {
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #181818;
+}
+@media screen and (min-width: 768px) {
+  .brand-logo {
+    font-size: 2.8rem;
+  }
 }
 
 .banner-img {
   height: 40%;
 }
-
 @media screen and (min-width: 992px) {
   .banner-img {
     height: 70%;
   }
 }
-
 .banner-img img {
   height: 100%;
   width: 100%;
@@ -112,18 +102,16 @@ button {
   padding: 1rem 2.4rem;
   border: none;
   border-radius: 0.5rem;
+  cursor: pointer;
   background-color: transparent;
 }
-
 button.btn-outline {
   border: 1px solid #6d67e4;
 }
-
 button.btn {
   background-color: #6d67e4;
-  color: #ffff;
+  color: white;
 }
-
 @media screen and (min-width: 768px) {
   button {
     padding: 1.6rem 3rem;
@@ -133,25 +121,27 @@ button.btn {
 h1 {
   font-size: 3.4rem;
 }
-
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 4.8rem;
   }
 }
 
-p {
-  font-size: 1.2rem;
-  color: #282a3a;
+h2 {
+  font-size: 2.2rem;
 }
 
+p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #282a3a;
+}
 @media screen and (min-width: 768px) {
   p {
     font-size: 1.4rem;
     line-height: 2.6rem;
   }
 }
-
 @media screen and (min-width: 992px) {
   p {
     font-size: 1.6rem;
@@ -162,11 +152,38 @@ p {
   color: #6d67e4;
 }
 
+.vh-30 {
+  height: 30vh !important;
+}
+
+.vh-40 {
+  height: 40vh !important;
+}
+
+.gallery-big {
+  background-color: red;
+  flex: 0 0 60%;
+}
+.gallery-big img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery-small {
+  height: 60vh;
+  background-color: red;
+}
+.gallery-small img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -178,5 +195,4 @@ html {
 
 a {
   text-decoration: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -8,13 +8,21 @@ menuBtn.addEventListener("click", () => {
     menuStatus = false;
     menuBtn.classList.remove("open");
   }
-  console.log("pressed");
 });
 
 //testimonial
-
+let viewWidth = window.innerWidth;
+window.onresize = () => {
+  console.log("working");
+  viewWidth = window.innerWidth;
+};
 new Glide(".glide-testimonial", {
   type: "carousel",
   startAt: 0,
+  perView: 1,
   autoplay: 2000,
+  peek: {
+    before: viewWidth > 992 ? 100 : 0,
+    after: 0,
+  },
 }).mount();

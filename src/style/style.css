@@ -140,6 +140,11 @@ h5 {
   font-size: 1.8rem;
 }
 
+.h5-lignt {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
 p {
   font-size: 1.4rem;
   line-height: 2.6rem;
@@ -159,6 +164,18 @@ p {
 
 .bg-text-primary {
   color: #6d67e4;
+}
+
+.bg-prime {
+  background-color: #6d67e4 !important;
+}
+
+.bg-sec {
+  background-color: #810ca8 !important;
+}
+
+.bg-third {
+  background-color: #7dce13 !important;
 }
 
 .vh-30 {
@@ -211,6 +228,17 @@ p {
 
 .testimonial {
   border-radius: 1rem;
+  z-index: 1;
+  width: 96%;
+}
+@media screen and (min-width: 992px) {
+  .testimonial {
+    max-width: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .glide-testimonial {
@@ -242,7 +270,6 @@ p {
   font-size: 7.8rem;
 }
 .glide-testimonial .review-box p {
-  width: 80%;
   color: white;
 }
 .glide-testimonial .review-box .review-user {
@@ -255,6 +282,34 @@ p {
 }
 .glide-testimonial .review-box .review-user span {
   font-size: 1.4rem;
+}
+
+.about {
+  background-color: #eff5f5;
+  border-radius: 5px;
+  z-index: -1;
+}
+@media screen and (min-width: 992px) {
+  .about {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    max-width: 60%;
+    transform: translateY(-54%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about .about-content {
+    max-width: 60%;
+  }
+}
+.about .about-content > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 * {

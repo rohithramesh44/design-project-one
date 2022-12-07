@@ -35,6 +35,10 @@ h2 {
 h5 {
   font-size: 1.8rem;
 }
+.h5-lignt {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
 p {
   font-size: 1.4rem;
   line-height: 2.6rem;
@@ -49,6 +53,15 @@ p {
 }
 .bg-text-primary {
   color: $prim-cl;
+}
+.bg-prime {
+  background-color: $prim-cl !important;
+}
+.bg-sec {
+  background-color: $sec-cl !important;
+}
+.bg-third {
+  background-color: $third-cl !important;
 }
 
 //sizing -----

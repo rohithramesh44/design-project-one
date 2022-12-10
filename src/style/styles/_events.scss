@@ -1,0 +1,58 @@
+.section-events {
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    span {
+      display: inline-block;
+      margin-bottom: 1.2rem;
+      color: $gray-cl;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+    }
+  }
+}
+.event-card {
+  background-color: $prim-cl-li;
+  border-radius: 5px;
+  .card-head {
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem 0 2rem;
+    margin-bottom: 2.2rem;
+    flex: 1 1 auto;
+
+    img {
+      width: 10rem;
+      height: 8rem;
+      margin-right: 2rem;
+    }
+    h4 {
+      span {
+        font-size: 1.4rem;
+        padding: 2px 1rem;
+        display: inline-block;
+        border-radius: 1rem;
+        margin-bottom: 0.5rem;
+        color: $white-cl;
+        background-color: $sec-cl;
+      }
+      font-size: 1.6rem;
+    }
+  }
+  .card-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 3 3 auto;
+    padding: 0rem 2rem 2rem 2rem;
+    h4 {
+      font-size: 1.6rem;
+      span {
+        font-size: 1.4rem;
+        color: $gray-cl;
+        display: inline-block;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
